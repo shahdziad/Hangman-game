@@ -41,7 +41,7 @@ while chances > 0:
             failed_attempts += 1
             print("_", end=" ")
     if failed_attempts== 0:
-        print("you won! the word indeed is "+ random_word)
+        print("\nyou won! the word indeed is "+ random_word)
         break
     guesses= input("\nEnter your letter: ")
     player_guess += guesses 
@@ -50,6 +50,7 @@ while chances > 0:
         print(f"you're wrong, try again. you now have {chances} chances")
         if chances == 0:
            print("Game over. the secret word is", random_word)
+
 
 
 
